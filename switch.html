@@ -1,0 +1,52 @@
+<html>
+
+<head>
+</head>
+
+<body>
+  <p id="demo"></p>
+  <script>
+    'use strict';
+
+    let arg = prompt("Enter a value?");
+    switch (arg) {
+      case '0':
+      case '1':
+        alert('One or zero');
+
+        break;
+
+      case '2':
+        alert('Two');
+        break;
+
+      case 3:
+        alert('Never executes!');
+        break;
+      default:
+        alert('An unknown value');
+    }
+
+    let b;
+    let a = prompt("Enter the value to a");
+    let arg1 = prompt("choose opration like + - * / ");
+
+    let sum;
+    a = Number(a);
+
+    sum = Number(sum);
+    if (arg1 === '+' || arg1 === '-' || arg1 === '*' || arg1 === '/') {
+      b = prompt("Enter the value to b");
+      b = Number(b);
+      switch (arg1) {
+        case '+':
+          sum = a + b;
+          console.log(sum);
+
+          document.getElementById("demo").innerHTML = sum;
+          break;
+      }
+    } else {
+      alert("You have NOT select the oprator");
+    }
+  </script>

@@ -1,0 +1,30 @@
+<html>
+
+<head>
+</head>
+
+<body>
+
+
+  <script>
+    let name = 'sameer';
+
+    function showmessage() {
+      name = "muzaffar";
+      let message = "hello" + " " + name;
+      console.log(message);
+    }
+    console.log(name);
+    showmessage();
+    console.log(name); // message 
+
+    function showMessage1(from, text = "no text given") {
+      alert(from + ": " + text);
+    }
+
+    showMessage1("Ann", "asd"); // Ann: no text given
+  </script>
+
+</body>
+
+</html>

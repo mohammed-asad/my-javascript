@@ -1,0 +1,41 @@
+<html>
+
+<head>
+</head>
+
+<body>
+
+  <h1> Comparison of different types</h1>
+  <p>While compare string with number convert it to number only</p>
+
+  <h1>Important</h1>
+  <p> It is possible that at the same time:<br>
+
+    Two values are equal.<br>
+    One of them is true as a boolean and the other one is false as a boolean. <br>
+    <br>
+    <br>
+    let a = 0;<br>
+    alert( Boolean(a) ); // false<br>
+
+    let b = "0";<br>
+    alert( Boolean(b) ); // true<br>
+
+    alert(a == b); // true!<br>
+
+
+  </p>
+
+  <script>
+    console.log('2' > 1); // true, string '2' becomes a number 2
+    console.log('01' == 1); // true, string '01' becomes a number 1
+    if ("2" > "12") {
+      alert(true);
+    } else {
+      alert(false);
+    }
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<html>
+
+<head>
+</head>
+
+<body>
+
+  <p><input type="text" id="myText" value=""></p>
+  <p><input type="text" id="myText1" value="" style="width: 50px;"><span style="color:#8a8a8a;"> choose the oprator + -
+      * /</span>
+  </p>
+  <p> <input type="text" id="myText2" value=""></p>
+
+  <p><input type="button" id="myText" value="Calulate" onclick="myFunction();"></p>
+  <h1>The Total is</h1>
+  <h1 id="demo"></h1>
+
+
+  <script>
+    function myFunction() {
+
+      let a = document.getElementById("myText").value;
+      console.log(a);
+      let arg = document.getElementById("myText1").value;
+      console.log("oprator select" + " " + arg);
+      let b = document.getElementById("myText2").value;
+      console.log(b);
+
+
+      a = Number(a);
+      b = Number(b);
+
+      var sum;
+
+      if (arg === '+' || arg === '-' || arg === '*' || arg === '/') {
+
+        switch (arg) {
+          case '+':
+            sum = a + b;
+            console.log(sum);
+
+            document.getElementById("demo").innerHTML = sum;
+            break;
+          case '-':
+            sum = a - b;
+            console.log(sum);
+
+            document.getElementById("demo").innerHTML = sum;
+            break;
+
+          case '*':
+            sum = a * b;
+            console.log(sum);
+
+            document.getElementById("demo").innerHTML = sum;
+            break;
+
+          case '/':
+            sum = a / b;
+            console.log("total is" + sum);
+
+            document.getElementById("demo").innerHTML = sum;
+            break;
+        }
+      } else {
+        alert("You have NOT select the oprator");
+      }
+    }
+  </script>
+</body>
+
+</html>

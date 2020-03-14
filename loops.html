@@ -1,0 +1,63 @@
+<html>
+
+<head>
+</head>
+
+<body>
+  <p id="demo"></p>
+  <script>
+    'use strict';
+    let i = 0;
+    while (i <= 3) { // shows 0, then 1, then 2
+      console.log(i);
+
+      i++;
+    }
+  </script>
+
+  <script>
+    let a = 3;
+    while (a) {
+      console.log(a);
+      a--;
+
+    }
+  </script>
+
+  <script>
+    let b;
+    for (b = 0; b < 10; b++) {
+      if (b % 2 == 0) continue;
+      console.log("odd Number Begins ------------------------------");
+      console.log(b);
+    }
+  </script>
+  <script>
+    console.log("Odd 2 bigns ============");
+    for (let i1 = 0; i1 < 10; i1++) {
+
+      if (i1 % 2) {
+
+        console.log(i1);
+      }
+
+    }
+
+
+    for (let i = 0; i < 3; i++) {
+
+      for (let j = 0; j < 3; j++) {
+
+        let input = prompt(`Value at coords (${i},${j})`, '');
+
+        console.log("j value" + j);
+        // what if we want to exit from here to Done (below)?
+      }
+      console.log("i value" + i);
+    }
+
+    alert('Done!');
+  </script>
+</body>
+
+</html>

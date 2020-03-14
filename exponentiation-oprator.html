@@ -1,0 +1,108 @@
+<html>
+
+<head>
+</head>
+
+<body>
+
+  <h1> Exponentiation Operator</h1>
+
+  <p>The a multiply by it self with b time like 5 X 4 result 625 as shown below i.e 5 to the power 4 </p>
+  <p id="demo"> </p>
+  <br>
+  <br>
+  <p>The a multiply by it self with b time like 4 X 1/2 means (0.5 ) result 2 as shown below i.e 4 to the power 0.5 </p>
+  <p id="demo1"> </p>
+  <br>
+  <br>
+  <h1>Remainder %</h1>
+  <p>The remainder operator %, despite its appearance, is not related to percents.The result of a % b is the remainder
+    of the integer division of a by b.For instance:</p>
+  <pre>5)10(2
+  10
+ ----
+  00 ==> Reminder is 0 
+
+  <span>Proved it by javascript program done result below</span>
+
+<span style="font-size:16px;">The Result of a b with value a = 5 b = 10 Reminder is </span><strong><span id="demo2" style="font-size:16px;"></strong>
+</pre>
+  <pre>
+      b
+  a 2)15(7
+      14
+     ----
+
+     01 ==> Reminder is 1 
+
+  <span>Proved it by javascript program done result below</span>
+
+<span style="font-size:16px;">The Result of a b with value a = 2 b = 15 Reminder is </span><strong><span id="demo3" style="font-size:16px;"></span></strong>
+
+  </pre>
+
+  <pre> Question: Write a program to check given number is divisible by 2 or not 
+    <p>Enter the value to check given number is divisible by 2 or not</p>
+     <!-- <input type="number" name="number" value="" id="number"> -->
+
+    <p id="demo4" style="font-size:18px; font-weight: 900;"> </p>
+
+
+    <pre>
+      postfix and prefix
+      let a = 1, b = 1;
+
+let c = ++a; // ?
+let d = b++; // ?
+
+    </pre>
+  </pre>
+
+  <script>
+    let a = 5;
+    let b = 4;
+    txt = a ** b;
+    // here a multiply by it self with b time means to say 5 X 5 X 5 X 5 X 5 X 5 = 15625  more info it work as power of means 5 to the power 6.  5^6
+
+    document.getElementById("demo").innerHTML = txt;
+    a = 4;
+    b = 1 / 2;
+    c = a ** b;
+    document.getElementById("demo1").innerHTML = c;
+    // change a value for Reminder calculation a value 5 and b value 10
+    a = 5;
+    b = 10;
+    c = b % a;
+    document.getElementById("demo2").innerHTML = c;
+    console.log(c);
+
+    // change a value for Reminder calculation a value 2 and b value 15
+    a = 2;
+    b = 15;
+    c = b % a;
+    document.getElementById("demo3").innerHTML = c;
+    console.log(c);
+
+    a = prompt("Enter the value to check given number is divisible by 2 or not");
+    //a = document.getElementById("number").value;
+
+    if (a % 2 == 0) {
+      document.getElementById("demo4").innerHTML = "The Given Number is Divisible by 2";
+    } else {
+      document.getElementById("demo4").innerHTML = "The Given Number is ! NOT Divisible by 2";
+    }
+  </script>
+  <script>
+    let a1 = 1;
+    let b1 = 1;
+    let c1 = ++a1; // ?
+    let d1 = b1++; // ?
+    alert(a1); // 2
+    alert(b1); // 2  
+    alert(c1); //2
+    alert(d1); // 1
+  </script>
+
+</body>
+
+</html>

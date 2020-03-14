@@ -1,0 +1,94 @@
+<html>
+
+<head>
+</head>
+
+<body>
+
+  <p><input type="text" id="myText" value=""></p>
+
+
+  <p><input type="button" id="a1" value="1" onclick="addCart(1)"> <input type="button" id="a2" value="2"
+      onclick="addCart(2)"> <input type="button" id="a3" value="3" onclick="addCart(3)"></p>
+  <p><input type="button" id="a4" value="4" onclick="addCart(4)"> <input type="button" id="a5" value="5"
+      onclick="addCart(5)"> <input type="button" id="a6" value="6" onclick="addCart(6)"></p>
+  <p><input type="button" id="a7" value="7" onclick="addCart(7)"> <input type="button" id="a8" value="8"
+      onclick="addCart(8)"> <input type="button" id="a9" value="9" onclick="addCart(9)"></p>
+  <p><input type="button" id="a0" value="0" onclick="addCart(0)"> <input type="button" id="plus" value="+"
+      onclick="myequal();"> <input type="button" id="minu" value="-"></p>
+  <p><input type="button" id="myText" value="Calulate" onclick="myFunction();"></p>
+  <h1>The Total is</h1>
+  <h1 id="demo"></h1>
+
+
+  <script>
+    function addCart(v) {
+      let k = document.getElementById('myText').value += v;
+
+      // console.log(v);
+      // return false;
+      myequal(k);
+
+    }
+
+    function myequal(iseql) {
+      let textvalu = iseql;
+      document.getElementById("a1").value;
+
+    }
+
+    function myFunction() {
+
+
+      let a = document.getElementById("a1").value;
+      console.log(a);
+
+      let arg = document.getElementById("plus").value;
+      console.log(arg);
+      let b = document.getElementById("a2").value;
+      console.log(b);
+
+
+      a = Number(a);
+      b = Number(b);
+
+      var sum;
+
+      if (arg === '+' || arg === '-' || arg === '*' || arg === '/') {
+
+        switch (arg) {
+          case '+':
+            sum = a + b;
+            // console.log(sum);
+
+            document.getElementById("demo").innerHTML = sum;
+            break;
+          case '-':
+            sum = a - b;
+            console.log(sum);
+
+            document.getElementById("demo").innerHTML = sum;
+            break;
+
+          case '*':
+            sum = a * b;
+            console.log(sum);
+
+            document.getElementById("demo").innerHTML = sum;
+            break;
+
+          case '/':
+            sum = a / b;
+            console.log("total is" + sum);
+
+            document.getElementById("demo").innerHTML = sum;
+            break;
+        }
+      } else {
+        alert("You have NOT select the oprator");
+      }
+    }
+  </script>
+</body>
+
+</html>
